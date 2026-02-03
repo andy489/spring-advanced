@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: currency-rest-consumer
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/exchange_rates_db?createDatabaseIfNotExist=yes&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASS:rootpass}
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+open.exchange.rates:
+  schema: ${OER_SCHEMA:https}
+  host: ${OER_HOST:openexchangerates.org}
+  path: ${OER_URI:/api/latest.json}
+  appId: ${OPEN_EXCHANGE_RATES_APP_ID:}
+  symbols: EUR,GBP,CHF
+  enabled: true

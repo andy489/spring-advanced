@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+
+    <title>JS-CRUD-Client</title>
+
+</head>
+
+<body style="color: white; background-color: #1d2630">
+
+<div class="container mt-5">
+
+
+    <div class="text-center">
+
+        <h1 class="display-5 mb-5">
+            <strong>JS-CRUD-Client</strong>
+        </h1>
+
+    </div>
+
+    <div class="main row justify-content-center">
+
+        <form action="" id="book-form" class="row justify-content-center mb-4 col-7" autocomplete="off">
+
+            <div class="col-10 col-md-8 mb-3">
+                <label for="title">Title</label>
+                <input class="form-control"
+                       name="title"
+                       type="text"
+                       id="title"
+                       placeholder="Enter title here..."/>
+            </div>
+
+            <div class="col-10 col-md-8 mb-3">
+                <label for="author">Author</label>
+                <input class="form-control"
+                       name="authorName"
+                       type="text"
+                       id="author"
+                       placeholder="Enter author here..."/>
+            </div>
+
+            <div class="col-10 col-md-8 mb-3">
+                <label for="isbn">ISBN</label>
+                <input class="form-control"
+                       name="isbn"
+                       type="text"
+                       id="isbn"
+                       placeholder="Enter isbn here..."/>
+            </div>
+
+            <div class="col-10 col-md-8 mb-3">
+                <input id="add-book-btn" class="btn btn-success add-btn container-fluid" type="submit" value="Add">
+            </div>
+
+        </form>
+
+        <div class="col-7 mt-1 row justify-content-center">
+            <button id="reloadBooks" class="row btn btn-secondary font-weight-bold mb-4 col-8 col-md-6">
+                Reload Books
+            </button>
+        </div>
+
+        <div class="col-12">
+            <table class="table table-striped table-dark">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="book-list">
+                <tr class="d-none">
+                    <td class="align-middle">Example Title</td>
+                    <td class="align-middle">Example Author</td>
+                    <td class="align-middle">Example ISBN</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit font-weight-bold">Edit</button>
+                        <button class="btn btn-danger btn-sm delete font-weight-bold">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
