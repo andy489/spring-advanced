@@ -111,4 +111,4 @@ logs/
 ### Gradle Wrapper ###
 # Exclude Gradle wrapper scripts (they can be regenerated)
 **/gradlew
-**/gradlew.bat
+**/gradlew.bat**/gradle/
