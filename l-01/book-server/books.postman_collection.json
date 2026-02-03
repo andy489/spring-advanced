@@ -1,0 +1,156 @@
+{
+  "info": {
+    "_postman_id": "d7751fe5-3d05-48ba-8b45-6311fdcc4b49",
+    "name": "books",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41363538"
+  },
+  "item": [
+    {
+      "name": "all_books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/books",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "book_by_id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/books/4",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete_book_by_id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/books/7",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create_new_book",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Spring Advanced\",\n    \"isbn\": \"225b-53g2-4dfg-afww\",\n    \"author\": {\n        \"name\": \"Лъчезар Балев\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "edit_book_by_id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Book Title\",\n  \"isbn\": \"\",\n  \"author\": {\n    \"name\": \"Updated Author Name\"\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/books/2222",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books",
+            "2222"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "partial_update_book_by_id",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Partial Updated Book\",\n    \"author\": {\n        \"name\": \"Байов\"\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/books/3",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "books",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

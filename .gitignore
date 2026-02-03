@@ -114,3 +114,8 @@ logs/
 **/test-output/
 **/test-results/
 **/reports/
+
+### Gradle Wrapper ###
+# Exclude Gradle wrapper scripts (they can be regenerated)
+**/gradlew
+**/gradlew.bat
