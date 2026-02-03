@@ -13,13 +13,6 @@
 # Exclude ALL build directories at any level
 **/build/
 
-# But keep Gradle wrapper files (important for each project!)
-!**/gradle/wrapper/gradle-wrapper.jar
-!**/gradle/wrapper/gradle-wrapper.properties
-
-# Avoid excluding gradle wrapper directory itself
-!**/gradle/wrapper/
-
 # Gradle cache and generated files
 .gradle
 gradle-app.setting
