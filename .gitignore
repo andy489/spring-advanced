@@ -6,17 +6,8 @@
 *.zip
 *.tar.gz
 
-### Gradle ###
-# Exclude ALL .gradle directories at any level
-**/.gradle/
-
 # Exclude ALL build directories at any level
 **/build/
-
-# Gradle cache and generated files
-.gradle
-gradle-app.setting
-.gradletasknamecache
 
 ### IntelliJ IDEA ###
 # Match .idea folders at ANY directory level
@@ -108,7 +99,10 @@ logs/
 **/test-results/
 **/reports/
 
-### Gradle Wrapper ###
-# Exclude Gradle wrapper scripts (they can be regenerated)
+### GRADLE - EXCLUDE EVERYTHING ###
+**/gradle/
+**/.gradle/
 **/gradlew
-**/gradlew.bat**/gradle/
+**/gradlew.bat
+**/gradle-wrapper.jar
+**/gradle-wrapper.properties
